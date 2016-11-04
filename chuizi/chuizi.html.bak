@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>锤子科技</title>
+  
+  <style type="text/css">
+		*{margin:0;padding:0px;}
+		body{font-size:14px;font-family:"微软雅黑";}
+		a{text-decoration:none;color:#fff;}
+		ul li{list-style:none;}
+		
+		#items{width:100%;}
+		/*顶层导航*/
+		#tool{width:100%;height:100px;background:#111;}
+		#tool #itool{width:1120px;height:100px;background:#111;margin:0px auto;position:relative;}
+		#tool #itool #logo{width:50px;height:50px;top:25px;left:25px;position:absolute;}
+		#tool #itool .tops{height:50px;float:left;margin-right:50px;}
+		#tool #itool #intop{margin-top:35px;}
+		#tool #itool .tops ul li{padding:0px 20px;;float:left;}
+		#tool #itool .tops ul li a{color:#999;}
+		#tool #itool .tops ul li a:hover{color:#fff;}
+		#tool #itool .topbtn{float:left;}
+		#tool #itool .topbtn input{width:100px;height:30px;background:#222;border:1px solid #555;border-radius:5px;color:#777;cursor:pointer;}
+		#tool #itool .topbtn input:hover{background:#666;color:#ddd}
+
+		/*二层banner区*/
+		#banner{height:800px;background:url(images/bg1.jpg) no-repeat center center;}
+		#banner #inban{width:1120px;height:800px;background:rgba();margin:0px auto;}
+		.banl{margin-top:50px;}
+		.banr{width:350px;}
+			
+		/*三层banner区*/
+		#detail{width:100%;;background:#fff;border-bottom:#f1f1f0 solid 1px}
+		#detail ul{width:1120px;margin:0px auto;overflow:hidden;padding:34px 6px 26px;}
+		#detail ul li{width:366px;height:190px;float:left;position:relative;margin:0 7px 8px 0}
+		
+		/*四层banner区*/
+		#footer{width:100%;background:#fafafa;}
+
+		
+  </style>
+  <link type="text/css" rel="stylesheet" href="css/common.css" />
+
+ </head>
+ <body>
+	<div id="items">
+		<!--顶层导航-->
+		<div id="tool">
+			<div id="itool">
+				<div id="logo">
+					<a href="#"><img src="images\logo_1.png" style="margin-top:-210px;"/></a>
+				</div>
+				<div id="intop" class="fr">
+					<div class="tops">
+						<ul>
+							<li class="inli"><a href="#">在线商城</a></li>
+							<li class="inli"><a href="#">Smartisan T2</a></li>
+							<li class="inli"><a href="#">坚果手机</a></li>
+							<li class="inli"><a href="#">欢喜云</a></li>
+							<li class="inli"><a href="#">应用下载</a></li>
+							<li class="inli"><a href="#">官方论坛</a></li>
+						</ul>
+					</div>
+					<div class="topbtn">
+						<input type="button" value="登陆"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--二层banner区-->
+		<div id="banner">
+			<a href="#" >
+				<div id="inban">
+					<div class="banl fl">
+						<img src="images\s1.png"/>
+					</div>
+					<div class="banr fr">
+						<img src="images\s2.png" style="width:350px;height:280px;margin-top:100px;"/>
+						<a href="#" title="进一步了解 Smartisan T2">进一步了解 Smartisan T2</a>
+					</div>	
+				</div>
+			</a>
+		</div>
+
+		<!--三层banner区-->
+		<div id="detail">
+			<ul>
+				<li class="t1" style="margin-top:-5">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t1.png">
+					</a>
+				</li>
+				<li class="t2 ">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t2.png">
+					</a>
+				</li>
+				<li class="t3 ">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t3.png">
+					</a>
+				</li>
+				<li class="t4 ">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t4.png">
+					</a>
+				</li>
+				<li class="t5 ">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t5.png">
+					</a>
+				</li>
+				<li class="t6 ">
+					<a href="#" title="Smartisan T2 产品视频">
+						<img src="images/t6.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	<style>
+		#footer #fbw{width:1120px;margin:0px auto;padding:30px 0 40px;}
+		#footer #fbw .ful{float:left;margin-left:100px;}
+		#footer #fbw .flur{float:right;}
+		#footer #fbw .flur #flur1{height:50px;background:url(images/f1.png)no-repeat;font-size:16px;margin-left:120px;;line-height:34px;}
+		#footer #fbw #fbot{width:1120px;height:100px;margin-top:140px;color:#666;}
+		
+	</style>
+		<!--四层banner区-->
+		<div id="footer">
+			<div id="fbw">
+				<div class="ftop">
+					<div class="flef">
+						<ul class="ful" style="margin-left:0px;">
+							<li style="font-size:20px;margin-bottom:10px;"><a href="#">订单服务</a></li>
+							<li><a href="#">购买指南</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">送货政策</a></li>
+						</ul>
+						<ul class="ful">
+							<li style="font-size:20px;margin-bottom:10px;"><a href="#">服务支持</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">维修门店</a></li>
+							<li><a href="#">零售门店</a></li>
+						</ul>
+						<ul class="ful">
+							<li style="font-size:20px;margin-bottom:10px;"><a href="#">媒体中心</a></li>
+							<li><a href="#">新闻动态</a></li>
+							<li><a href="#">官方视频</a></li>
+							<li><a href="#">图片资源</a></li>
+						</ul>
+						<ul class="ful">
+							<li style="font-size:20px;margin-bottom:10px;"><a href="#">关于公司</a></li>
+							<li><a href="#">公司简介</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+						<ul class="ful">
+							<li style="font-size:20px;margin-bottom:10px;"><a href="#">关注我们</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">官方微信</a></li>
+							<li><a href="#">官方贴吧</a></li>
+						</ul>
+						<ul class="flur">
+							<li id="flur1" style=""><a href="#" style="padding:0 0 0 40px;color:#fff">在线咨询</a></li>
+							<li style="font-size:30px;margin-left:35px;">400-619-0909</li>
+							<li style="color:#999">周一至周日 9:00-18:00（仅收市话费）</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div id="fbot">
+					<div id="fbot1">
+						<span>Copyright © 2016, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司</span>
+						<span>|</span>
+						<a href="#">法律声明</a>
+						<span>|</span>
+						<a href="#">隐私条款</a>
+					</div>
+					<div>
+						<p class="fl"><a href="#">京ICP备14041720号-1</a></p>
+						<p class="fl" style="margin-left:10px;"><a href="#">京ICP证140622号</a></p> 
+						<p class="fl" style="margin-left:10px;"><a href="#">京公网安备11010502025474</a></p>
+					</div>
+
+				</div>
+				
+			</div>
+		
+		
+		
+		</div>
+	
+
+
+
+
+
+
+	
+	</div>
+
+
+
+
+ <script type="text/javascript" src="js\jquery-1.12.0.min.js"></script>
+ <script type="text/javascript">
+	$(function(){
+		
+	
+	})
+
+ </script>
+ </body>
+</html>

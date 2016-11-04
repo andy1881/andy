@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>百度新闻 分享功能键</title>
+  
+  <style type="text/css">
+		*{margin:0;padding:0px;}
+		body{font-size:14px;font-family:"微软雅黑";}
+		a{text-decoration:none;color:#fff;}
+		ul li{list-style:none;}
+		.box{width:200px;height:200px;border:1px solid red;margin:50px auto;border-radius:5px;overflow:hidden;background:tan;}
+		.box .items{width:200px;height:200px;background:#1cc;border-radius:5px;transform:rotate(180deg);transform-origin:-10px 210px;}
+	
+		.item ul li{width:1020px;height:500px;border:1px solid tan;margin:10px auto;font-size:40px;}
+
+  </style>
+ </head>
+ <body>
+	<div class="box">
+		<div class="items"></div>
+	</div>
+	
+	<div class="item">
+		<ul>
+			<li>百度新闻写的啥我也不知道</li>
+			<li>百度新闻写的啥我也不知道</li>
+			<li>百度新闻写的啥我也不知道</li>
+			<li>百度新闻写的啥我也不知道</li>
+			<li>百度新闻写的啥我也不知道</li>
+			<li>百度新闻写的啥我也不知道</li>
+		</ul>
+	</div>
+	<style>
+		.box1{width:50px;height:370px;position:fixed;right:210px;bottom:50px;overflow:hidden;}
+		.box1 ul li{width:48px;height:48px;margin-bottom:5px;border-radius:2px;position:relative;overflow:hidden;}
+		.box1 ul li .inword_bac{width:48px;height:48px;background:#18448e;transform:rotate(180deg);transform-origin:-5px 41px;color:#fff;text-align:center;line-height:50px;}
+		.box1 ul{margin-top:50px;}
+		
+		
+	</style>
+	<div class="box1">
+		<ul>
+		<a href="#">
+			<li class="inword" >
+				<img src="images\icon-baidugn.png"/>
+				<div class="inword_bac">二维码</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-51px;"/>
+				<div class="inword_bac"><p style="width:30px;line-height:17px;padding:8px">收藏本站</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-102px;"/>
+				<div class="inword_bac">热词</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-153px;"/>
+				<div class="inword_bac">传媒</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-204px;"/>
+				<div class="inword_bac">搜索</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-255px;"/>
+				<div class="inword_bac"><p style="width:30px;line-height:17px;padding:8px">用户反馈</p></div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="inword">
+				<img src="images\icon-baidugn.png" style="margin-top:-306px;"/>
+				<div class="inword_bac">二维码</div>
+			</li>
+		</a>
+
+		</ul>
+	</div>
+
+
+
+ <script type="text/javascript" src="js\jquery-1.12.0.min.js"></script>
+ <script type="text/javascript">
+		//.box1 ul li:hover .inword_bac{transform:rotate(0deg);position:absolute;top:0;transition:all 0.5s;transform-origin:-5px 50px;}
+	$(window).scroll(function(){
+		if($(this).scrollTop()>350){
+			$(".box1 ul").stop(true).animate({marginTop:0},300)
+		}else{
+			$(".box1 ul").stop(true).animate({marginTop:55},300)	
+		}
+	})
+	$(function(){
+		
+		$(".box").mouseout(function(){
+			$(".items").css({transform:"rotate(180deg)",transition:"all .3s",transformOrigin:"-10px 210px"})
+		})
+
+		$(".box").mouseover(function(){
+			$(".items").css({transform:"rotate(0deg)",transition:"all .3s",transformOrigin:"-10px 210px"})
+		})
+
+		$(".inword").mouseover(function(){
+			$(this).children("div").css({
+				transform:"rotate(0deg)",
+				position:"absolute",
+				top:"0",
+				transition:"all 0.3s",
+				transformOrigin:"-5px 48px"
+			})
+					
+		})
+		$(".inword").mouseout(function(){
+			$(this).children("div").css({
+				transform:"rotate(180deg)",
+				position:"absolute",
+				top:"0",
+				transition:"all 0.3s",
+				transformOrigin:"-5px 48px"
+			})
+					
+		})
+		
+
+
+		/*
+		$(this).children("div").css({transform:"rotate(180deg)",transition:"all .3s",transformOrigin:"-5px 50px;"})
+		//alert(11)
+		.box1 ul{margin-top:50px;}
+		*/
+
+
+	
+	})
+
+	
+		
+		
+		
+
+	
+
+ </script>
+ </body>
+</html>
