@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work 2</title>
+		<style>
+			body{-moz-user-select: none; /*火狐*/
+				-webkit-user-select: none; /*webkit浏览器*/
+				-ms-user-select: none; /*IE10*/
+				-khtml-user-select: none; /*早期浏览器*/
+				user-select: none;}
+			table{border-collapse: collapse;text-align: left;line-height:30px;font-family:"微软雅黑";}
+			tr{cursor:pointer;color:#333339}
+			table{border: 1px solid #dddddd;;}
+			.tdbackgroundcolor{background:#dff0d8;}
+			table tr:hover{background:#f5f5f5;}
+			.tool:hover{background:#fff}
+			.xcolor{background:#9c9cd9;color:#fff;}
+			tr td,th{padding-left:5px;}
+		</style> 
+	</head>
+	<body>
+		<table border="1" cellspacing="" cellpadding="" width="800px">
+			<tr class="titleStyle">
+				<th title="order">Order ID</th>
+				<th title="customer">Customer ID</th>
+				<th title="date">Order Date</th>
+				<th title="freight">Freight</th>
+				<th title="ship">Ship Name</th>
+			</tr>
+			<tr class="style">
+				<td class="order">1</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">31.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">2</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">32.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">3</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">33.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">4</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">34.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">5</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">35.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">6</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">36.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+			<tr class="style">
+				<td class="order">7</td>
+				<td class="customer">WILMK</td>
+				<td class="date">1996-07-04 00:00:00</td>
+				<td class="freight">37.3900</td>
+				<td class="ship">Vins et alcools Chevaller</td>
+			</tr>
+		</table>
+		
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//console.log()
+		$(function(){
+			
+			var $text1,$text2,title,lenght,$dom1,$dom2 = null;
+			$("tr th").on("mousedown",function(){
+				lenght = $(this).parent().siblings().length
+				title = $(this).attr("title")
+				text1 = $(this).parent().siblings().children("."+title+"")
+				$dom1 = $(this)
+				$dom1.addClass("xcolor")
+				text1.addClass("xcolor")
+			})
+			$("tr th").on("mouseup",function(){
+				$dom2 = $(this)
+				lenght = $(this).parent().siblings().length
+				title = $(this).attr("title")
+				$text2 = $(this).parent().siblings().children("."+title+"")
+				for(var i=0;i<lenght;i++){
+					$dom2 .before($dom1)
+					$(this).parent().siblings().children("."+title+"").eq(i).before(text1.eq(i))
+				}
+				$(window).on("mouseup",function(){
+					$dom1.removeClass("xcolor")
+					text1.removeClass("xcolor")
+				})
+			})
+			//选择 变成整行变绿
+			$(".style").on("click",function(){
+				var $this = $(this)
+				if(($(this).attr("class"))=="style tdbackgroundcolor"){
+					$this.removeClass("tdbackgroundcolor");
+				}else{
+					$this.addClass("tdbackgroundcolor");
+				}
+				console.log($(this).attr("class"));
+			})
+			
+			
+			
+		})
+		
+	</script>
+	</body>
+</html>
+
